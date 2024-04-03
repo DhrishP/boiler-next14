@@ -1,1 +1,1 @@
-### Boilerplate code for nextjs14-drizzle-
+### Boilerplate code for nextjs14-shadcn-drizzle-postgresSQL-NextAuth(v5)
