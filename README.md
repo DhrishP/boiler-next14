@@ -17,3 +17,5 @@ npm install -g degit
 - **NSPKJPGC == nextjs14-shadcn-(prisma+kyselyORM)-postgresSQL-Clerk**
 
 - **NSPKJPGNA == nextjs14-shadcn-(prisma+kyselyORM)-postgresSQL-NextAuth(v5)**
+
+### Why Kysely? - it fixes the issues of prisma of multiple queries creation for join operations (with the benefits of prisma schema)
