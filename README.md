@@ -21,8 +21,8 @@ npm install -g degit
 ### Why Kysely? - it fixes the issues of prisma of multiple queries creation for join operations (with the benefits of prisma schema)
 
 ## COMPLETED TEMPLATES :-
-NSDPGC❌
-NSDPGNA❌
-NSPKPGC✅
+NSDPGC❌<br/>
+NSDPGNA❌<br/>
+NSPKPGC✅<br/>
 NSPKPGNA❌
 
