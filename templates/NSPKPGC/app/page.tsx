@@ -1,10 +1,22 @@
-import Image from "next/image";
+"use client";
+
+import SubmitUser from "./action";
 
 export default function Home() {
-  return <>
-  <div>
-    hi
-  </div>
-  
-  </>;
+  const SubmitUsers = async () => {
+    const resp = await SubmitUser();
+    if (resp.success) {
+      console.log("User Created");
+    }
+    if(!resp.success){
+      console.log("User not Created")
+    }
+  };
+
+  return (
+    <>
+      <div>hi</div>
+      <button onClick={SubmitUsers}>Create User</button>
+    </>
+  );
 }

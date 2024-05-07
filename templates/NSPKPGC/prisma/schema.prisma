@@ -1,10 +1,21 @@
-
-
-generator client {
-  provider = "prisma-client-js"
+generator kysely {
+  provider     = "prisma-kysely"
+  // Optionally provide a destination directory for the generated file
+  // and a filename of your choice
+  output       = "../app/db"
+  fileName     = "types.ts"
+  // Optionally generate runtime enums to a separate file
+  enumFileName = "enums.ts"
 }
 
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL") // optional and not applicable for all databases
+}
+
+model User {
+  id    String  @id @default(dbgenerated("gen_random_uuid()")) //for prisma-kysely
+  email String  @unique
+  name  String?
 }

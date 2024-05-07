@@ -1,3 +1,5 @@
+// For non-edge prisma client instance (used mostly everywhere)
+
 import { PrismaClient } from "@prisma/client";
 
 declare global{
