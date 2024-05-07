@@ -5,8 +5,8 @@ export default async function SubmitUser(): Promise<{ success: boolean }> {
   const res = await db
     .insertInto("User")
     .values({
-      email: "dummy2@gmail.com",
-      name: "dummy2",
+      email: "dummy3@gmail.com",
+      name: "dummy3",
     })
     .executeTakeFirst();
 
